@@ -7,14 +7,14 @@ const DYNAMIC_CACHE = 'ntnu-dynamic-v1';
 
 // Static assets to cache immediately
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/app.js',
-  '/js/schedule.js',
-  '/js/youbike.js',
-  '/js/tdx.js',
-  '/manifest.json'
+  './',
+  './index.html',
+  './css/style.css',
+  './js/app.js',
+  './js/schedule.js',
+  './js/youbike.js',
+  './js/tdx.js',
+  './manifest.json'
 ];
 
 // API endpoints that can be cached with network-first strategy
