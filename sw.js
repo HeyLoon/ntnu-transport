@@ -123,7 +123,7 @@ async function cacheFirst(request) {
     console.error('[SW] Cache-first failed:', error);
     
     // Return offline fallback if available
-    return caches.match('/index.html');
+    return caches.match('./index.html');
   }
 }
 
