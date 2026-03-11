@@ -13,11 +13,11 @@
     <meta name="apple-mobile-web-app-title" content="師大交通">
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json">
     
-    <!-- PWA Icons (SVG with PNG fallback) -->
-    <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
-    <link rel="apple-touch-icon" href="icons/icon.svg">
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+    <link rel="apple-touch-icon" href="./icons/icon.svg">
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -232,7 +232,9 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js')
+                navigator.serviceWorker.register('./sw.js', {
+                    scope: './'
+                })
                     .then((registration) => {
                         console.log('SW registered:', registration.scope);
                         
@@ -250,7 +252,7 @@
                         });
                     })
                     .catch((error) => {
-                        console.log('SW registration failed:', error);
+                        console.error('SW registration failed:', error);
                     });
             });
         }

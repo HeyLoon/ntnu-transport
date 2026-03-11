@@ -2,21 +2,21 @@
   "name": "師大交通助手",
   "short_name": "師大交通",
   "description": "台師大校園交通資訊 - 校車時刻表、復興幹線即時資訊、YouBike 站點查詢",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/ntnu-transport/",
+  "scope": "/ntnu-transport/",
   "display": "standalone",
   "background_color": "#1a1a2e",
   "theme_color": "#e94560",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "./icons/icon.svg",
-      "sizes": "any",
+      "src": "/ntnu-transport/icons/icon.svg",
+      "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "./icons/icon.svg",
+      "src": "/ntnu-transport/icons/icon.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "maskable"
@@ -24,5 +24,6 @@
   ],
   "categories": ["transportation", "utilities"],
   "lang": "zh-TW",
-  "dir": "ltr"
+  "dir": "ltr",
+  "prefer_related_applications": false
 }
